@@ -14,16 +14,14 @@ Router.route('/', {
   name: 'Home'
 });
 
-Router.route('/list', {
-  name: 'ListStuff'
+Router.route('/internetexplorer', {
+  name: 'InternetExplorer'
 });
 
-Router.route('/add', {
-  name: 'AddStuff'
+Router.route('/firefox', {
+  name: 'Firefox'
 });
 
-
-Router.route('/stuff/:_id', {
-  name: 'EditStuff',
-  data: function() { return Stuff.findOne(this.params._id); }
+Router.route('/chrome', {
+  name: 'Chrome'
 });
